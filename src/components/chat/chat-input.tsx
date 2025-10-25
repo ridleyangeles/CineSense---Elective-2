@@ -37,10 +37,10 @@ export function ChatInput({ value, onChange, onSubmit, disabled }: ChatInputProp
             borderColor: "#333333",
             color: "#f2f2f2",
             "&:hover fieldset": {
-              borderColor: "#a855f7",
+              borderColor: "#ffbd4c",
             },
             "&.Mui-focused fieldset": {
-              borderColor: "#a855f7",
+              borderColor: "#ffbd4c",
             },
           },
           "& .MuiOutlinedInput-input::placeholder": {

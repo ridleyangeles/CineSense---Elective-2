@@ -22,7 +22,7 @@ export function ChatMessage({ role, content, timestamp }: ChatMessageProps) {
       <Paper
         sx={{
           maxWidth: "70%",
-          backgroundColor: isUser ? "#a855f7" : "#1e1e1e",
+          backgroundColor: isUser ? "#ffbd4c" : "#1e1e1e",
           color: isUser ? "#f2f2f2" : "#f2f2f2",
           p: 2,
           borderRadius: "0.75rem",
