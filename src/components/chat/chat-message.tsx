@@ -38,7 +38,7 @@ export function ChatMessage({ role, content, timestamp }: ChatMessageProps) {
             sx={{
               display: "block",
               mt: 1,
-              color: isUser ? "rgba(242, 242, 242, 0.7)" : "#a3a3a3",
+              color: isUser ? "rgba(0, 0, 0, 0.7)" : "#000000ff",
             }}
           >
             {timestamp.toLocaleTimeString()}

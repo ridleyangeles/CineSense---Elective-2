@@ -57,31 +57,36 @@ export default function Chat() {
   }, [messages]);
 
   return (
-    <Box
+    <Box className="bg-gradient-to-b from-black to-[#B85252]"
       sx={{
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        background:
-          'linear-gradient(180deg, #000000 0%, #0f0a0a 50%, #6e0a0a 100%)',
+        backgroundSize: '200% 200%',
+        animation: 'pulse 5s ease-in-out infinite',
+        backgroundPosition: '50% 0%',
       }}
     >
+
+       <style>
+    {`
+      @keyframes pulse {
+        0% { background-position: 50% 0%; }
+        50% { background-position: 10% 50%; } /* moves gradient down */
+        100% { background-position: 50% 0%; }  /* moves gradient back up */
+      }
+    `}
+  </style>
+
       <Container maxWidth="lg" sx={{ pt: 4, pb: 2 }}>
         <Stack direction="row" alignItems="center" spacing={1.5} sx={{ mb: 1 }}>
           {/* <AutoAwesomeRoundedIcon sx={{ color: '#a855f7' }} /> */}
-          <Typography variant="h1" color="secondary">
-            CineSense Chat
+          <Typography variant="h1" color="secondary" sx={{textShadow: "2px 2px 11.3px rgba(255, 189, 76, 0.6)"}}>
+            CineChat
           </Typography>
         </Stack>
-        <Typography variant="body1" color="text.secondary">
-          Describe your mood or preferences, and I’ll recommend the perfect {''} 
-            <Typography variant="inherit" color="secondary" component="span" sx={{ fontWeight: 'bold' }}>
-                Movies
-            </Typography> 
-            {''} or {''} 
-            <Typography variant="inherit" color="secondary" component="span" sx={{ fontWeight: 'bold' }}>
-              TV Shows
-            </Typography>
+        <Typography variant="body1" color="text.secondary" sx={{textShadow: "2px 2px 11.3px rgba(255, 255, 255, 0.6)"}}>
+          Describe your mood or preferences, and I’ll recommend the perfect Movies or TV Shows
         </Typography>
       </Container>
 
@@ -115,10 +120,10 @@ export default function Chat() {
                     <AutoAwesomeRoundedIcon sx={{ color: '#a855f7' }} />
                   </Box> */}
                   <Stack spacing={1}>
-                    <Typography variant="h2" color="text.primary">
+                    <Typography variant="h2" color="text.primary" sx={{textShadow: "2px 2px 11.3px rgba(255, 255, 255, 0.6)"}}>
                       Welcome to {''} 
-                      <Typography variant="inherit" color="secondary" component="span" sx={{ fontWeight: 'bold' }}>
-                        CineSense!
+                      <Typography variant="inherit" color="secondary" component="span" sx={{ fontWeight: 'bold', textShadow: "2px 2px 11.3px rgba(255, 189, 76, 0.6)" }}>
+                        CineChat!
                       </Typography>
                     </Typography>
                     <Typography variant="body1" color="text.secondary">
@@ -137,7 +142,7 @@ export default function Chat() {
                           color: '#e5e5e5',
                           borderColor: '#333333',
                           textTransform: 'none',
-                          backgroundColor: 'rgba(255,255,255,0.04)',
+                          backgroundColor: '#4E4E4E',
                           '&:hover': {
                             borderColor: '#444',
                             backgroundColor: 'rgba(255,255,255,0.06)',

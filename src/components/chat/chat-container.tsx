@@ -13,7 +13,7 @@ export function ChatContainer({ children, sx }: ChatContainerProps) {
   return (
     <Paper
       sx={{
-        backgroundColor: "#141414",
+        backgroundColor: "#343131",
         border: "1px solid #333333",
         borderRadius: "0.75rem",
         p: 3,

@@ -53,9 +53,11 @@ export function ChatInput({ value, onChange, onSubmit, disabled }: ChatInputProp
         onClick={onSubmit}
         disabled={disabled || !value.trim()}
         sx={{
-          color: "#a855f7",
+          color: "#ffbd4c",
+          pb: "15px",
           "&:hover": {
             backgroundColor: "rgba(168, 85, 247, 0.1)",
+            pb: "15px",
           },
           "&:disabled": {
             color: "#666666",
