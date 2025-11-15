@@ -89,8 +89,13 @@ export default function Home() {
           <ScrollAppear>
           <Typography sx={{maxWidth: "80%", 
             textAlign: "justify",
-            fontSize: "18px"}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, minima voluptates dolore eaque doloribus maiores ex nemo soluta corrupti amet quidem odio facere nostrum quibusdam nulla aliquam dolorum ducimus voluptatem.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, minima voluptates dolore eaque doloribus maiores ex nemo soluta corrupti amet quidem odio facere nostrum quibusdam nulla aliquam dolorum ducimus voluptatem.
+            fontSize: "18px"}}>CineSense is an AI-enhanced movie and TV show recommendation system that
+             integrates the TMDb (The Movie Database) API and sentiment analysis to deliver personalized
+              entertainment suggestions based on the user’s mood and emotions. Unlike traditional
+               recommendation algorithms that rely mainly on watch history, ratings, or 
+               genre preferences, CineSense focuses on interpreting the user’s current feelings and 
+               intent through natural language prompts to generate more meaningful and emotionally
+                aligned recommendations.
           </Typography>
           </ScrollAppear>
         </Box>
@@ -315,12 +320,12 @@ export default function Home() {
         }}>Why CineSense?</Typography>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: "AI-Powered", desc: "Get personalized suggestions based on your viewing preferences." },
+                { title: "AI-Driven", desc: "Get personalized suggestions based on your viewing preferences." },
                 { title: "Vast Library", desc: "Explore a vast library of movies and TV shows from around the world." },
                 { title: "Real Ratings", desc: "Access real-time ratings and reviews from trusted sources." },
                 { title: "Conversational", desc: "Get personalized movie and TV show recommendations through natural language conversations." },
-                { title: "Conversational", desc: "Get personalized movie and TV show recommendations through natural language conversations." },
-                { title: "Conversational", desc: "Get personalized movie and TV show recommendations through natural language conversations." },
+                { title: "Personalized", desc: "Receive tailored suggestions based on your emotions and preferences." },
+                { title: "User-Friendly", desc: "Enjoy a smooth, simple, and intuitive viewing experience." },
               ].map((feature, i) => (
             <ScrollAppear>
             <Box

@@ -3,6 +3,20 @@
 import { Box, Typography } from "@mui/material"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { keyframes } from "@mui/system"; // <-- import keyframes her"
+
+
+const fadeSlideUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 
 export default function Footer() {
   return (
@@ -14,6 +28,7 @@ export default function Footer() {
         py: 2, // vertical padding
         textAlign: "center",
         borderTop: "1px solid #3A3A3A", // subtle top border
+        animation: `${fadeSlideUp} 1s ease-in-out forwards`,
       }}
     >
       <Typography
